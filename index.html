@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="text-center">
+        <h1 id="hello" class="text-6xl font-bold text-blue-600">Hello</h1>
+    </div>
+
+    <script>
+        // JavaScript to make it interactive
+        const helloElement = document.getElementById('hello');
+        helloElement.addEventListener('click', () => {
+            alert('Hello back!');
+        });
+    </script>
+</body>
+</html>
